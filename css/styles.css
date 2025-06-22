@@ -59,10 +59,10 @@ ul {
     padding-right: 16px;
 }
 
-.main-header .container{
+/* .main-header .container{
     flex-direction: column;
     align-items: flex-start;
-}
+} */
 
 .header-container {
     display: flex;
@@ -70,9 +70,11 @@ ul {
     align-items: center;
 }
 
-.main-nav {
-    display: flex;
-    align-items: center;
+.menu,
+.address {
+    /* display: flex;
+    align-items: center; */
+    display: none;
 }
 
 .studio {
@@ -109,7 +111,10 @@ ul {
 
 
 .main-header .logo {
-    margin-right: 76px;
+    /* margin-right: 76px; */
+    padding: 16px 0;
+    margin-bottom: 0;
+    display: block;
 }
 
 .logo {
@@ -128,7 +133,7 @@ ul {
 .menu {
     /* display: flex;
     gap: 40px; */
-    flex-direction: column;
+    /* flex-direction: column; */
     gap: 16px;
     width: 100%;
 }
@@ -241,9 +246,9 @@ ul {
     color: #404bbf;
 }
 
-.address {
+/* .address {
     font-style: normal;
-}
+} */
 
 .email {
     font-weight: 400;
@@ -255,7 +260,17 @@ ul {
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.burger-btn{
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
 
+.burger-icon{
+    display: block;
+    fill: #2f2f37;
+}
 
 .email:hover,
 .email:focus {
@@ -412,10 +427,10 @@ ul {
     
 }
 
- .team-card img{
+.team-card img{
     width: 100%;
     height: auto;
- }
+}
 
 .team-card-content {
     /* padding: 32px 0; */
@@ -943,12 +958,65 @@ ul {
 
 
 
-@media screen and (min-width: 768px) and (max-width: 1439px)
+@media screen and (min-width: 768px)
 {
     .container{
         max-width: 768px;
         padding-left: 16px;
         padding-right: 16px;
+    }
+
+.main-header .logo {
+    margin-right: 120px;
+    padding: 24px 0;
+    
+}
+
+.main-nav {
+    display: flex;
+    gap: 40px;
+}
+
+
+    .burger-btn{
+        display: none;
+    }
+
+    .menu,
+    .address{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    }
+
+    /* .contact-list{
+    display: flex;
+    align-items: center;
+    gap: 150px;
+    } */
+
+
+    .main-nav{
+        display: flex;
+        align-items: center;
+    }
+
+    .email {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+    color: #434455;
+    display: block;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+    .contact-list{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 12px;
+    font-style: normal;
     }
 
     .features-section{
@@ -1006,7 +1074,11 @@ ul {
     .subscribe-title {
     text-align: left;
     }
+
+
 }
+
+
 
 
 @media screen and (min-width: 1440px)
@@ -1014,6 +1086,26 @@ ul {
     .container{
         max-width: 1440px;
     }
+
+    .main-header .logo {
+    margin-right: 76px;
+    padding: 24px 0;
+    
+}
+
+.contact-list{
+    flex-direction: row;
+    align-items: center;
+    gap: 40px;
+}
+
+.email {
+    padding: 24px 0;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+}
+
     .features-social-icon{
         display: flex;
         width: 60px;
@@ -1023,6 +1115,8 @@ ul {
         justify-content: center;
     }
     
+
+
     .features-item {
         width: calc((100% - 72px) / 4);
         padding-right: 0;
