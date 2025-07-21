@@ -684,6 +684,13 @@ text-align: center;
     padding: 96px 0;
 }
 
+.footer-social-text{
+    display: flex
+;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 16px;
+}
 
 .increase {
     font-weight: 400;
