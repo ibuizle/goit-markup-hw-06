@@ -353,9 +353,9 @@ letter-spacing: 0.02em;
     text-decoration: none;
     padding: 24px 0;}
 
-.navi.current {
+/* .navi.current {
     color: #404bbf;
-}
+} */
 
 .navi.current::after {
     content: '';
@@ -438,13 +438,15 @@ letter-spacing: 0.02em;
 .effective {
     font-weight: 700;
 font-size: 36px;
-line-height: 111%;
+line-height: 1.2;
 letter-spacing: 0.02em;
+ justify-content: center;
 text-align: center;
     color: #FFFFFF;
     max-width: 496px;
     margin: auto;
-
+    width: 100%;
+    max-width: 216px;
 }
 
 .key-features {
@@ -1249,11 +1251,13 @@ font-size: 16px;
 font-size: 56px;
 line-height: 107%;
 letter-spacing: 0.02em; */
-font-weight: 700;
-font-size: 56px;
-line-height: 107%;
-letter-spacing: 0.02em;
-text-align: center;
+        width: 100%;
+        font-size: 56px;
+        line-height: 1.08;
+        letter-spacing: 0.02em;
+        color: #fff;
+        max-width: 496px;
+        margin: 0 auto;
 
 }
 
@@ -1471,10 +1475,7 @@ text-align: center;
     
 
 .effective {
-    font-size: 56px;
-    line-height: 1.07;
-    text-align: center;
-    letter-spacing: 0.02em;
+    text-transform: capitalize;
 
 }
 
