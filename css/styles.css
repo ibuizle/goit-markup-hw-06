@@ -1118,15 +1118,19 @@ text-align: center;
 }
 
 .backdrop {
-    opacity: 0;
-    visibility: hidden;
-    pointer-events: none;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: opacity 300ms ease;
+  transform: scale(1.05);
+  transition: opacity 300ms ease, transform 300ms ease;
 }
 
 .backdrop.is-open {
-    opacity: 1;
-    visibility: visible;
-    pointer-events: auto; 
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+  transform: scale(1); /
 }
 
 
