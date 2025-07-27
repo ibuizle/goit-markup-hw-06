@@ -1173,7 +1173,7 @@ display: none;
 
 .main-nav {
     display: flex;
-    gap: 40px;
+    width: 495px;
 }
 
 
