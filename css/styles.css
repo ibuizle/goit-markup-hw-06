@@ -164,7 +164,6 @@ transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
   gap: 40px;
   padding: 0;
   list-style: none;
-  padding-bottom: 168px;
 }
 
 .nav-link {
@@ -252,7 +251,6 @@ letter-spacing: 0.02em;
 
 .mobile-list{
   display: flex;
-  justify-content: center;
   flex-direction: row;
   gap: 40px;
   padding: 0;
@@ -285,7 +283,7 @@ letter-spacing: 0.02em;
 }
 
 .features-section {
-    padding: 120px 0;
+    padding: 96px 0;
 }
 
 
@@ -312,9 +310,8 @@ letter-spacing: 0.02em;
     flex-wrap: wrap;
     /* padding: 0;
     margin: 0; */
-    padding-right: 16px;
     list-style: none;
-    gap: 24px;
+    gap: 72px;
 }
 
 .features-item {
@@ -413,14 +410,14 @@ letter-spacing: 0.02em;
 
 
 .hero {
-    max-width: 1440px;
+    max-width: 320px;
     background-image:
     linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
-    url(../images/people-officecompressed_mobile.png);
+    url(../images/people-officecompressed_mobile.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    padding: 188px 0;
+    padding: 72px 52px;
     text-align: center;
     color: #ffffff;     
     margin: 0 auto;
@@ -430,7 +427,7 @@ letter-spacing: 0.02em;
     .hero{
         background-image:
     linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
-    url(../images/people-officecompressed_mobile_2x.png);
+    url(../images/people-officecompressed_mobile_2x.jpg);
     }
 }
 
@@ -455,12 +452,12 @@ text-align: center;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #434455;
-    margin-bottom: 72px;
+    
 }
 
 .team {
     background-color: #f4f4fd;
-    padding: 120px 0;
+    padding: 96px 0;
 }
 
 .hero-name {
@@ -599,7 +596,7 @@ text-align: center;
 
 .portfolio {
     background-color: #fff;
-    padding: 120px 0 120px 0;
+    padding: 96px 0;
 }
 
 .portfolio-content {
@@ -625,10 +622,7 @@ text-align: center;
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.portfolio-apps {
-    font-size: 28px;
-    margin-bottom: 40px;
-}
+
 
 .portfolio-card{
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
@@ -675,8 +669,7 @@ text-align: center;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #f4f4fd;
-    ;
-    text-align: center;
+    text-align: left;
     position: absolute;
     top: 0;
     width: 100%;
@@ -736,7 +729,6 @@ text-align: center;
 
 .footer-social {
     text-align: center;
-    width: 100%;
 }
 
 .footer-social-list {
@@ -930,7 +922,7 @@ text-align: center;
         0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    padding: 72px 24px 24px 24px;;
+    padding: 72px 16px 24px 16px;
 }
 
 .modal-close {
@@ -1058,6 +1050,7 @@ text-align: center;
 }
 
 .checkbox-label {
+    display: flex;
     font-size: 12px;
     line-height: 1.17;
     letter-spacing: 0.04em;
@@ -1065,6 +1058,8 @@ text-align: center;
 }
 
 .checkbox-custom{ 
+    display: flex;
+    flex-shrink: 0;
     margin-right: 8px;
             width: 16px;
             height: 16px;
@@ -1077,6 +1072,10 @@ text-align: center;
             align-items: center;
             justify-content: center;
             fill: transparent;
+}
+
+.checkbox-text{
+justify-content: center;
 }
 
 .checkbox-icon {
@@ -1130,19 +1129,22 @@ text-align: center;
   opacity: 1;
   visibility: visible;
   pointer-events: auto;
-  transform: scale(1); /
+  transform: scale(1);
 }
 
 
+.active{
+    color: #404bbf;
+}
 
-
+.phone{
+    color: #404bbf;
+}
 
 @media screen and (min-width: 768px) 
 {
     .container{
         max-width: 768px;
-        padding-left: 16px;
-        padding-right: 16px;
     }
 
 /* .footer-logo-box .logo {
@@ -1150,7 +1152,9 @@ text-align: center;
     margin-bottom: 16px;
 } */
 
-
+.team-item{
+    margin-bottom: 78px;
+}
 
 
 .main-title-item {
@@ -1231,22 +1235,22 @@ display: none;
 
 
 .hero {
-    max-width: 1440px;
+    max-width: 768px;
     background-image:
     linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
-    url(../images/people-officecompressed_tablet.png);
+    url(../images/people-officecompressed_tablet.jpg);
+    padding: 112px 0;
 }
 
 @media screen and (min-resolution:2x ) {
     .hero{
         background-image:
     linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
-    url(../images/people-officecompressed_tablet_x2.png);
+    url(../images/people-officecompressed_tablet_x2.jpg);
     }
 }
 
 .key-features {
-    font-weight: 400;
 font-size: 16px;
 }
 
@@ -1276,10 +1280,8 @@ letter-spacing: 0.02em; */
     }
 
     .features-list{
-        padding-top: 96px;
-        padding-right: 24px;
-        padding-left: 24px;
-        padding-bottom: 72px;
+    column-gap: 24px;
+    row-gap: 72px;
     }
 
 
@@ -1288,6 +1290,7 @@ letter-spacing: 0.02em; */
         flex-wrap: wrap;
         justify-content: center;
         gap: 24px;
+        row-gap: 64px;
     }
 
     .team-card {
@@ -1348,11 +1351,7 @@ letter-spacing: 0.02em; */
   }
 
 
-.footer-logo-box,
-.footer-social,
-.subscribe-container{
-    width: calc((100% - 72px) / 2);
-}
+
 
 .footer-social-text{
     display: flex;
@@ -1392,13 +1391,9 @@ letter-spacing: 0.02em; */
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #f4f4fd;
-    width: 288px;
 }
 
-.footer-social{
-    width: 208px;
-    height: 24px;
-}
+
 
 .footer-logo-box{
     width: 264px;
@@ -1412,6 +1407,8 @@ letter-spacing: 0.02em; */
 .subscribe-button{
     margin-top: 0;
 }
+
+
 }   
 
 
@@ -1493,6 +1490,7 @@ letter-spacing: 0.02em; */
     background-image:
     linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
     url(../images/people-office.jpg);
+    padding: 188px 0;
 }
     
 
@@ -1500,7 +1498,7 @@ letter-spacing: 0.02em; */
      .hero{
         background-image:
     linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
-    url(../images/people-officex2.png);
+    url(../images/people-officex2.jpg);
     }
 }
     .features-item {
@@ -1508,7 +1506,7 @@ letter-spacing: 0.02em; */
     }
 
 .features-section {
-    padding: 96px 0;
+    padding: 120px 0;
 }
 
     .features-list{
@@ -1561,4 +1559,17 @@ letter-spacing: 0.02em; */
 
 .footers{
     padding: 100px 0;
+}
+
+.team {
+    padding: 120px 0;
+}
+
+.team-item{
+    margin: 0 auto 72px;
+}
+
+.portfolio {
+    background-color: #fff;
+    padding: 120px 0 120px 0;
 }
